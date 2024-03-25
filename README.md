@@ -1,2 +1,6 @@
 # 231107-mechanism_design_paradigm_bilevel
  
+1. 利用S_calculate_Pareto计算帕累托前沿
+     调用plot_Pareto_fun进行自动画图。
+2. 最后运行try_false_bid看它谎报能额外获得多少钱。考虑某个主体的策略性。去重新计算optimization_primal查看市场结果。如何去计算relaxIC。考虑它谎报能获得的超额利润。这个可以看出在谎报的时候发生的变化。这里没必要选择一个特殊的点。
+3. 再看S_testIC这个主程序。为了达成理想的效果，把sample_method都改了（否则的话由于x_worse的点没对齐，无法达成想要的效果）。这里假设维持spread不变，考虑在不同的kIC幅度下，各主体什么时候会谎报多少。最后的这一类市场结果都存在Result_test_false里。。具体的数据，看result_parti_collect即可
